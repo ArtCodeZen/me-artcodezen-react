@@ -17,9 +17,5 @@
   padding-right: 2px;
   margin-right: 10px;
   border-right: 2px solid;
-  transition: all ease-in-out 0.5s;
-}
-.link:hover {
-  color: black;
-  margin: 0 10%;
+ 
 }/*# sourceMappingURL=header.css.map */
