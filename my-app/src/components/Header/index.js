@@ -4,10 +4,9 @@ function Header(){
     return(
         
         <div className='nav'>
-            <Link className='link' to="/">Home</Link>
-            <Link className='link' to="/">Tecnologias</Link>
-
-            <Link className='link' to="/About">Sobre</Link>
+            <Link className='link' to="/me-artcodezen-react">Home</Link>
+            <Link className='link' to="/tecnologias">Tecnologias</Link>
+            <Link className='link' to="/about">Sobre</Link>
         </div>
     )
 }
