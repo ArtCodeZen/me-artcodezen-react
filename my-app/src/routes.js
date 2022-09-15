@@ -10,7 +10,6 @@ function RoutesApp(){
             <Routes>
                 <Route path="/me-artcodezen-react" element={<Home/>}/>
                 <Route path="/about" element={<About/>}/>
-
                 <Route path="*" element={<Error/>}/>
             </Routes>
         </BrowserRouter>
