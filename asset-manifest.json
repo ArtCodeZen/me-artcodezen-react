@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/me-artcodezen-react/static/css/main.61c93fbd.css",
-    "main.js": "/me-artcodezen-react/static/js/main.5814b619.js",
+    "main.js": "/me-artcodezen-react/static/js/main.dae08600.js",
     "static/js/787.28cb0dcd.chunk.js": "/me-artcodezen-react/static/js/787.28cb0dcd.chunk.js",
     "index.html": "/me-artcodezen-react/index.html",
     "main.61c93fbd.css.map": "/me-artcodezen-react/static/css/main.61c93fbd.css.map",
-    "main.5814b619.js.map": "/me-artcodezen-react/static/js/main.5814b619.js.map",
+    "main.dae08600.js.map": "/me-artcodezen-react/static/js/main.dae08600.js.map",
     "787.28cb0dcd.chunk.js.map": "/me-artcodezen-react/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.61c93fbd.css",
-    "static/js/main.5814b619.js"
+    "static/js/main.dae08600.js"
   ]
 }
