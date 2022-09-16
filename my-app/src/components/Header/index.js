@@ -5,7 +5,7 @@ function Header(){
         
         <div className='nav'>
             <Link className='link' to="/me-artcodezen-react">Home</Link>
-            <Link className='link' to="/tecnologias">Tecnologias</Link>
+            <Link className='link' to="/tech">Tecnologias</Link>
             <Link className='link' to="/about">Sobre</Link>
         </div>
     )
