@@ -1,0 +1,41 @@
+.pageContent {
+  width: auto;
+  margin: auto 5%;
+}
+
+.infoCard {
+  display: flex;
+  width: auto;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.cardImage {
+  width: 50%;
+  text-align: center;
+  background-color: rgb(162, 59, 59);
+  color: white;
+}
+.cardImage h3 {
+  font-style: italic;
+  color: white;
+}
+.cardImage img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.cardDesc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 10px;
+  width: 50%;
+  word-wrap: break-word;
+  background-color: whitesmoke;
+}
+.cardDesc p {
+  text-align: justify;
+}/*# sourceMappingURL=home.css.map */
