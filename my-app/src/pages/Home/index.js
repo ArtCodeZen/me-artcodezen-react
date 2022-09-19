@@ -11,8 +11,8 @@ function Home() {
                     <p>Henrique <br />H. Watanabe</p>
                 </div>
                 <div className="cardDesc">
-                    <p>Sempre buscando novos conhecimentos de tecnologia e aplicando em cada situação
-                        , desafiando o erro para evoluir a cada solução!
+                    <p>"Sempre buscando novos conhecimentos de tecnologia e aplicando para cada situação
+                        , desafiando o erro para evoluir a cada solução!"
                     </p>
                 </div>
 

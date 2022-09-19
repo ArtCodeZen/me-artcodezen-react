@@ -10,4 +10,8 @@
 }
 .footer p {
   color: white;
+}
+
+.links {
+  display: flex;
 }/*# sourceMappingURL=footer.css.map */
