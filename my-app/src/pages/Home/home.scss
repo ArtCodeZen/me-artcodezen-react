@@ -34,8 +34,22 @@ $my-general-color: rgb(162, 59, 59);
     background-color: whitesmoke; 
     p{        
         text-align: justify;
+    }   
+}
+.selectCard{
+    margin-top: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;   
+    gap: 10px;
+    
+    img{
+        flex-basis: 350px;      
+        height: 100%;
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
     }
-
-   
 }
    

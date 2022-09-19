@@ -1,5 +1,6 @@
 import "./home.css"
 import imageProfile from "../../assets/img/mePhoto.jpg";
+import imgtest from "../../assets/thumb6.jpg"
 function Home() {
     return (
         <section className="pageContent">
@@ -14,6 +15,14 @@ function Home() {
                     <p>"Sempre buscando novos conhecimentos de tecnologia e aplicando para cada situação
                         , desafiando o erro para evoluir a cada solução!"
                     </p>
+                </div>
+                <div className="selectCard">
+                    <img alt= "img" src={imgtest}></img>    
+                    <img alt= "img" src={imgtest}></img>    
+                    <img alt= "img" src={imgtest}></img>    
+                    <img alt= "img" src={imgtest}></img>    
+                 
+                    
                 </div>
 
             </div>
