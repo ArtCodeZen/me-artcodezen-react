@@ -2,18 +2,17 @@ $my-general-color: rgb(162, 59, 59);
 
 .pageContent{
     width: auto;
-    margin: auto 5%;
+    margin: auto 3%;    
 }
 .infoCard{
-    display: flex;        
-    width: auto;  
-    justify-content: center;
+    display: flex;    
+    flex-wrap: wrap;
     margin-top: 10px;
     
 }
 .cardImage{
     width: 50%;
-    text-align: center;
+    text-align: center ;
     background-color: $my-general-color;
     color: white;
     h3{
@@ -30,10 +29,8 @@ $my-general-color: rgb(162, 59, 59);
     display: flex;
     justify-content: center;
     align-items: center;
-    align-content: center;
     padding: 10px;
-    width: 50%;
-    word-wrap: break-word;
+    width: 50%;    
     background-color: whitesmoke; 
     p{        
         text-align: justify;

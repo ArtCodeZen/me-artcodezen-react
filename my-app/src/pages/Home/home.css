@@ -1,12 +1,11 @@
 .pageContent {
   width: auto;
-  margin: auto 5%;
+  margin: auto 3%;
 }
 
 .infoCard {
   display: flex;
-  width: auto;
-  justify-content: center;
+  flex-wrap: wrap;
   margin-top: 10px;
 }
 
@@ -30,10 +29,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  align-content: center;
   padding: 10px;
   width: 50%;
-  word-wrap: break-word;
   background-color: whitesmoke;
 }
 .cardDesc p {

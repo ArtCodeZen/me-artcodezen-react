@@ -2,8 +2,7 @@ import "./home.css"
 import imageProfile from "../../assets/img/mePhoto.jpg";
 function Home() {
     return (
-        <div className="pageContent">
-
+        <section className="pageContent">
             <div className="infoCard">
                 <div className="cardImage">
                     <h3>A.K.A</h3>
@@ -13,13 +12,12 @@ function Home() {
                 </div>
                 <div className="cardDesc">
                     <p>Sempre buscando novos conhecimentos de tecnologia e aplicando em cada situação
-                        , desafiando o erro para evoluir a cada solução!.
+                        , desafiando o erro para evoluir a cada solução!
                     </p>
                 </div>
 
             </div>
-        </div >
+        </section >
     )
 }
-
 export default Home;

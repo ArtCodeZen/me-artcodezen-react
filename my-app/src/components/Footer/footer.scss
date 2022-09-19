@@ -1,0 +1,16 @@
+$my-general-color: rgb(162, 59, 59);
+
+.footer{       
+    width: 100%;
+    height: 60px;
+    background-color: $my-general-color;    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p{
+        color: white;
+    }    
+    
+}
