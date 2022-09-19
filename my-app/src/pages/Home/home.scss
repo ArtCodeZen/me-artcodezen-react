@@ -1,14 +1,20 @@
 $my-general-color: rgb(162, 59, 59);
 
+@keyframes colorAnimation{
+    0% {border-color: white;}
+    100% {border-color:$my-general-color;}
+}
 .pageContent{
     width: auto;
     margin: auto 3%;    
+   
 }
 .infoCard{
     display: flex;    
     flex-wrap: wrap;
     margin-top: 10px;
-    
+   
+
 }
 .cardImage{
     width: 50%;
@@ -18,6 +24,7 @@ $my-general-color: rgb(162, 59, 59);
     h3{
         font-style: italic;
         color: white;
+       
     }
     img{
         height: 100px;
@@ -37,14 +44,15 @@ $my-general-color: rgb(162, 59, 59);
     }   
 }
 .selectCard{
-    margin-top: 30px;
+    margin-top: 10px;
     width: 100%;
     flex-wrap: wrap;
     display: flex;
     justify-content: center;   
-    gap: 10px;
+    gap: 10px;    
     
     img{
+        
         flex-basis: 350px;      
         height: 100%;
         width: 100%;
@@ -52,4 +60,34 @@ $my-general-color: rgb(162, 59, 59);
         object-fit: cover;
     }
 }
-   
+.selectTitle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button{
+        margin: 1% 2%;
+        border: none;
+        font-size: 100%;
+        background: none;
+        padding: 2%;
+       
+        transition: all 0.5s ease-in-out;
+        border-bottom: 5px solid;
+        animation-name: colorAnimation;   
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+       
+        &:hover{
+            background-color: $my-general-color;
+            border-radius: 10px;
+            animation-iteration-count: 0;
+            color: white;
+
+        }
+    }
+ 
+        
+    
+}

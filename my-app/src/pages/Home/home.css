@@ -1,3 +1,19 @@
+@-webkit-keyframes colorAnimation {
+  0% {
+    border-color: white;
+  }
+  100% {
+    border-color: rgb(162, 59, 59);
+  }
+}
+@keyframes colorAnimation {
+  0% {
+    border-color: white;
+  }
+  100% {
+    border-color: rgb(162, 59, 59);
+  }
+}
 .pageContent {
   width: auto;
   margin: auto 3%;
@@ -38,7 +54,7 @@
 }
 
 .selectCard {
-  margin-top: 30px;
+  margin-top: 10px;
   width: 100%;
   flex-wrap: wrap;
   display: flex;
@@ -52,4 +68,35 @@
   height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.selectTitle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.selectTitle button {
+  margin: 1% 2%;
+  border: none;
+  font-size: 100%;
+  background: none;
+  padding: 2%;
+  transition: all 0.5s ease-in-out;
+  border-bottom: 5px solid;
+  -webkit-animation-name: colorAnimation;
+          animation-name: colorAnimation;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+.selectTitle button:hover {
+  background-color: rgb(162, 59, 59);
+  border-radius: 10px;
+  -webkit-animation-iteration-count: 0;
+          animation-iteration-count: 0;
+  color: white;
 }/*# sourceMappingURL=home.css.map */
