@@ -1,12 +1,39 @@
 import "./home.css"
 import imageProfile from "../../assets/img/mePhoto.jpg";
-import imgtest from "../../assets/thumb6.jpg"
-import myImage from "../../assets/image.jpg";
+import imageNote from "../../assets/image.jpg";
+import { useState } from "react";
 function Home() {
 
-    const myTitles = ["Programação", "Arte"];
-    function showInfo(item){
-        alert(item + "ok");
+
+    const STATES =
+    {
+        Programacao: "Programação",
+        Arte: "Arte",
+        Hobby: "Hobby"
+    }
+    const myTitles = [STATES.Programacao, STATES.Arte, STATES.Hobby];
+    const [infoText, setInfoText] = useState("");
+    function showInfo(stateItem) {
+        switch (stateItem) {
+            case STATES.Programacao:
+                return (
+                    <div>
+                        <h1>{stateItem}</h1>
+
+                        <img alt={stateItem} src={imageNote} />
+                        <img alt={stateItem} src={imageNote} />
+                        <img alt={stateItem} src={imageNote} />
+                        <img alt={stateItem} src={imageNote} />
+
+                    </div>
+
+
+                )
+
+            default:
+                alert('default')
+                break;
+        }
     }
     return (
         <section className="pageContent">
@@ -28,17 +55,13 @@ function Home() {
                     <div className="selectTitle">
                         {myTitles.map((item) => {
                             return (
-                                <button key={item} onClick={()=>showInfo(item)}>{item}</button>
+                                <button key={item} onClick={() => setInfoText(showInfo(item))}>{item}</button>
                             )
-                        })}
+                        })}                       
                     </div>
-                    <img alt="img" src={imgtest}></img>
-                    <img alt="img" src={myImage}></img>
-
-                    <img alt="img" src={imgtest}></img>
-                    <img alt="img" src={imgtest}></img>
-
-
+                    <div className="myCard">
+                            {infoText}
+                    </div>
                 </div>
 
             </div>
