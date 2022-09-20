@@ -2,7 +2,9 @@ import "./home.css"
 import imageProfile from "../../assets/img/mePhoto.jpg";
 import imgArduino from '../../assets/pictures/ImagesForSite/arduino.jpg';
 //import imgHardware from '../../assets/pictures/ImagesForSite/hardware.jpg';
+import imgProg from '../../assets/pictures/ImagesForSite/programming.jpg';
 import imgLinux from '../../assets/pictures/ImagesForSite/linux.jpg';
+import imgBackEnd from '../../assets/pictures/ImagesForSite/backendProg.jpg';
 import { useEffect, useState } from "react";
 function Home() {
 
@@ -32,13 +34,21 @@ function Home() {
                             </div>
                             <div className="cardInfoContent">
                                 <img alt={myTitle} src={imgLinux} />
-                                <p> <b>Sistema Linux</b>, Instalação, configuração tanto para uso desktop quanto servidores</p>
+                                <p> <b>Sistema Linux</b>, Instalação, configuração Distros Debian e OpenSuse</p>
+                            </div>
+                            <div className="cardInfoContent">
+                                <img alt={myTitle} src={imgProg} />
+                                <p> <b>Desenvolvimento de páginas web</b>, utilizando as tecnologias HTML5, CSS3, SASS, Javascript e React.JS</p>
+                            </div>
+                            <div className="cardInfoContent">
+                                <img alt={myTitle} src={imgBackEnd} />
+                                <p> <b>Desenvolvimento em backend</b>, utilizando as linguagens de programação C/C++, Python, Java</p>
                             </div>
                         </div>
                     )
                 case STATES.Arte:
                     return (
-                        <div>arte</div>
+                        <div></div>
                     );
 
                 case STATES.Hobby:
