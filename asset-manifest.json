@@ -1,18 +1,20 @@
 {
   "files": {
     "main.css": "/me-artcodezen-react/static/css/main.9c2befc5.css",
-    "main.js": "/me-artcodezen-react/static/js/main.61ecd6c7.js",
+    "main.js": "/me-artcodezen-react/static/js/main.b0e663d2.js",
     "static/js/787.28cb0dcd.chunk.js": "/me-artcodezen-react/static/js/787.28cb0dcd.chunk.js",
+    "static/media/backendProg.jpg": "/me-artcodezen-react/static/media/backendProg.7ce3a83a3a5e5015e7c6.jpg",
     "static/media/linux.jpg": "/me-artcodezen-react/static/media/linux.da84f0f403d1022d84c8.jpg",
     "static/media/arduino.jpg": "/me-artcodezen-react/static/media/arduino.6a04bf95024771dad161.jpg",
+    "static/media/programming.jpg": "/me-artcodezen-react/static/media/programming.8090e61ca2fa6309bd5a.jpg",
     "static/media/mePhoto.jpg": "/me-artcodezen-react/static/media/mePhoto.4cc7bbfd26b4c0e8381f.jpg",
     "index.html": "/me-artcodezen-react/index.html",
     "main.9c2befc5.css.map": "/me-artcodezen-react/static/css/main.9c2befc5.css.map",
-    "main.61ecd6c7.js.map": "/me-artcodezen-react/static/js/main.61ecd6c7.js.map",
+    "main.b0e663d2.js.map": "/me-artcodezen-react/static/js/main.b0e663d2.js.map",
     "787.28cb0dcd.chunk.js.map": "/me-artcodezen-react/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9c2befc5.css",
-    "static/js/main.61ecd6c7.js"
+    "static/js/main.b0e663d2.js"
   ]
 }
