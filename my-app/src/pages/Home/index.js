@@ -1,6 +1,8 @@
 import "./home.css"
 import imageProfile from "../../assets/img/mePhoto.jpg";
-import imageNote from "../../assets/image.jpg";
+import imgArduino from '../../assets/pictures/ImagesForSite/arduino.jpg';
+//import imgHardware from '../../assets/pictures/ImagesForSite/hardware.jpg';
+import imgLinux from '../../assets/pictures/ImagesForSite/linux.jpg';
 import { useEffect, useState } from "react";
 function Home() {
 
@@ -20,28 +22,41 @@ function Home() {
         function showInfo() {
             switch (myTitle) {
                 case STATES.Programacao:
-                    
+
                     return (
                         <div>
-                            <h1>{myTitle}</h1>
-
-                            <img alt={myTitle} src={imageNote} />
-                            <p>sdsdsdsdds</p>
+                            <div className="cardInfoContent">
+                                <img alt={myTitle} src={imgArduino} />
+                                <p><b>Programação para microcontroladores</b> na
+                                    linguagem c/c++, experiencia com firmware para drones e IOT</p>
+                            </div>
+                            <div className="cardInfoContent">
+                                <img alt={myTitle} src={imgLinux} />
+                                <p> <b>Sistema Linux</b>, Instalação, configuração tanto para uso desktop quanto servidores</p>
+                            </div>
                         </div>
                     )
                 case STATES.Arte:
-                    break;
+                    return (
+                        <div>arte</div>
+                    );
+
                 case STATES.Hobby:
-                    break;
-                default:                    
+                    return (
+                        <div></div>
+                    );
+
+                default:
                     break;
             }
         }
-        setTitles([STATES.Programacao, STATES.Arte, STATES.Hobby]);
-        setMyTitle(STATES.Programacao);
+        if (myTitles.length === 0) {
+            setTitles([STATES.Programacao, STATES.Arte, STATES.Hobby]);
+            setMyTitle(STATES.Programacao);
+        }
         setInfoText(showInfo());
 
-    }, [myTitle]);
+    }, [myTitle, myTitles]);
 
     return (
         <section className="pageContent">
@@ -69,6 +84,7 @@ function Home() {
                 </div>
             </div>
             <div className="selectedCardInfo">
+                <h1>{myTitle}</h1>
                 {infoText}
             </div>
 

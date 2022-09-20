@@ -94,3 +94,35 @@ $my-general-color: rgb(162, 59, 59);
         }
     }
 }
+
+.selectedCardInfo {
+
+    div {
+        width: 100%;
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
+        p {           
+            width: 50%;
+            height: 60%;
+            text-align: center;
+        }
+
+        img {
+           
+            width: 50%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .cardInfoContent{
+            margin-top: 20px;
+            background-color: whitesmoke;
+        }
+    }
+
+}
