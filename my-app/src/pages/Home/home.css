@@ -108,7 +108,7 @@
   text-align: center;
 }
 .selectedCardInfo div img {
-  width: 50%;
+  width: 20%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;

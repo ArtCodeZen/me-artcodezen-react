@@ -1,10 +1,10 @@
 import "./home.css"
 import imageProfile from "../../assets/img/mePhoto.jpg";
-import imgArduino from '../../assets/pictures/ImagesForSite/arduino.jpg';
+import imgArduino from '../../assets/pictures/ImagesForSite/embedded.svg';
 //import imgHardware from '../../assets/pictures/ImagesForSite/hardware.jpg';
-import imgProg from '../../assets/pictures/ImagesForSite/programming.jpg';
-import imgLinux from '../../assets/pictures/ImagesForSite/linux.jpg';
-import imgBackEnd from '../../assets/pictures/ImagesForSite/backendProg.jpg';
+import imgProg from '../../assets/pictures/ImagesForSite/frontend.svg';
+import imgLinux from '../../assets/pictures/ImagesForSite/linux.svg';
+import imgBackEnd from '../../assets/pictures/ImagesForSite/backend.svg';
 import { useEffect, useState } from "react";
 function Home() {
 
