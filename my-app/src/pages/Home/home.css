@@ -108,8 +108,14 @@
   text-align: center;
 }
 .selectedCardInfo div img {
-  width: 20%;
+  width: 50%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.selectedCardInfo div .svg {
+  width: 20%;
+  margin-right: 2%;
   -o-object-fit: cover;
      object-fit: cover;
 }

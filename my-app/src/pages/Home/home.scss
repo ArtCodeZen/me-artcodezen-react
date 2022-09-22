@@ -114,12 +114,16 @@ $my-general-color: rgb(162, 59, 59);
         }
 
         img {
-
-            width: 20%;
+            width: 50%;
             height: 100%;
+            object-fit: cover;           
+        }
+        .svg{
+            width: 20%;
+            margin-right: 2%;
             object-fit: cover;
         }
-
+    
         .cardInfoContent {
             margin-top: 20px;
             background-color: whitesmoke;
