@@ -9,7 +9,14 @@ $my-general-color: rgb(162, 59, 59);
         border-color: $my-general-color;
     }
 }
-
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
 .pageContent {
     width: auto;
     margin: auto 3%;
@@ -95,9 +102,10 @@ $my-general-color: rgb(162, 59, 59);
     }
 }
 
-.selectedCardInfo {
-
+.selectedCardInfo {       
+    animation: 2s ease-in-out 0s 1 slideInFromLeft;        
     div {
+      
         width: 100%;
         margin-top: 15px;
         display: flex;
@@ -106,7 +114,7 @@ $my-general-color: rgb(162, 59, 59);
         align-content: center;
         justify-content: center;
         align-items: center;
-
+       
         p {
             width: 50%;
             height: 60%;

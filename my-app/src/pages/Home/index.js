@@ -25,6 +25,7 @@ function Home() {
     const [myTitle, setMyTitle] = useState("");
 
     useEffect(() => {
+
         const STATES =
         {
             Programacao: "Programação",
@@ -32,10 +33,12 @@ function Home() {
             Hobby: "Hobby"
         }
         function showInfo() {
+            setInfoText("");
+            let stateHtml = "";
             switch (myTitle) {
                 case STATES.Programacao:
 
-                    return (
+                    stateHtml = (
                         <div>
                             <div className="cardInfoContent">
                                 <img className="svg" alt={myTitle} src={imgArduino} />
@@ -56,8 +59,9 @@ function Home() {
                             </div>
                         </div>
                     )
+                    break;
                 case STATES.Arte:
-                    return (
+                    stateHtml = (
                         <div>
                             <div className="cardInfoContent">
                                 <img alt={myTitle} src={imgArt} />
@@ -71,11 +75,11 @@ function Home() {
                         </div>
 
                     );
-
+                    break;
                 case STATES.Hobby:
-                    return (
+                    stateHtml = (
                         <div>
-                             <div className="cardInfoContent">
+                            <div className="cardInfoContent">
                                 <img alt={myTitle} src={imgHeli} />
                                 <p> <b>Heli R/C</b>, Eletric / Glow; Montagem, configuração e voo em modo Sport / 3D acrobatico</p>
                             </div>
@@ -89,15 +93,21 @@ function Home() {
                             </div>
                         </div>
                     );
-
+                    break;
                 default:
                     break;
             }
+            return (
+            <div className="selectedCardInfo">
+                <h1>{myTitle}</h1>
+                {stateHtml}
+            </div>)
         }
         if (myTitles.length === 0) {
             setTitles([STATES.Programacao, STATES.Arte, STATES.Hobby]);
             setMyTitle(STATES.Programacao);
         }
+       
         setInfoText(showInfo());
 
     }, [myTitle, myTitles]);
@@ -122,17 +132,16 @@ function Home() {
                 <div className="selectTitle">
                     {myTitles.map((item) => {
                         return (
-                            <button key={item} onClick={() => setMyTitle(item)}>{item}</button>
+                            <button key={item} onClick={() => {
+                                setInfoText("");
+                                setMyTitle(item);
+                            }
+                            }>{item}</button>
                         )
                     })}
                 </div>
             </div>
-            <div className="selectedCardInfo">
-                <h1>{myTitle}</h1>
-                {infoText}
-            </div>
-
-
+            {infoText}
         </section >
     )
 }

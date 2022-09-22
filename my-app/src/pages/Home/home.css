@@ -14,6 +14,22 @@
     border-color: rgb(162, 59, 59);
   }
 }
+@-webkit-keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .pageContent {
   width: auto;
   margin: auto 3%;
@@ -92,6 +108,10 @@
   color: white;
 }
 
+.selectedCardInfo {
+  -webkit-animation: 2s ease-in-out 0s 1 slideInFromLeft;
+          animation: 2s ease-in-out 0s 1 slideInFromLeft;
+}
 .selectedCardInfo div {
   width: 100%;
   margin-top: 15px;
