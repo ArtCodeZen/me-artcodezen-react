@@ -130,7 +130,7 @@ function Home() {
                 <div className="cardImage">
                     <h3>A.K.A</h3>
                     <p>artcodezen</p>
-                    <img alt="my face" src={imageProfile}/>
+                    <img alt="my face" src={imageProfile} height='100' width='100' />
                     <p>Henrique <br />H. Watanabe</p>
                 </div>
                 <div className="cardDesc">
