@@ -33,7 +33,7 @@ function Home() {
             Hobby: "Hobby"
         }
         function showInfo() {
-            setInfoText("");
+           
             let stateHtml = "";
             switch (myTitle) {
                 case STATES.Programacao:
