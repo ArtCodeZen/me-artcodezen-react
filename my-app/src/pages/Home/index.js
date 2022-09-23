@@ -23,7 +23,7 @@ function Home() {
     const [myTitles, setTitles] = useState([]);
     const [infoText, setInfoText] = useState("");
     const [myTitle, setMyTitle] = useState("");
-    const [flgActive, setFlgActive] = useState("false");
+    const [flgActive, setFlgActive] = useState("true");
     const lastTitle = useRef();
     useEffect(() => {
 
