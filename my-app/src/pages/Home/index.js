@@ -116,10 +116,11 @@ function Home() {
             lastTitle.current = myTitle;
             setFlgActive("false");
         }
-        const timer = setTimeout(() => {
-            setFlgActive("true");
-            setInfoText("");
+       
+        const timer = setTimeout(() => { 
+            setInfoText("");                     
             setInfoText(showInfo());
+            setFlgActive("true");  
         }, 2000);
         return () => clearTimeout(timer);
     }, [myTitle, myTitles, flgActive]);
@@ -153,7 +154,6 @@ function Home() {
                 </div>
             </div>
             <div className="selectedCardInfo" flg_active={flgActive}>
-
                 {infoText}
             </div>
 
