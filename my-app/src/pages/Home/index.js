@@ -42,20 +42,20 @@ function Home() {
                     stateHtml = (
                         <div>
                             <div className="cardInfoContent">
-                                <img className="svg" alt={myTitle} src={imgArduino} />
+                                <img className="svg" alt='imgArduino' src={imgArduino} />
                                 <p><b>Programação para microcontroladores</b> na
                                     linguagem c/c++, experiencia com firmware para drones e IOT</p>
                             </div>
                             <div className="cardInfoContent">
-                                <img className="svg" alt={myTitle} src={imgLinux} />
+                                <img className="svg" alt='imgLinux' src={imgLinux} />
                                 <p> <b>Sistema Linux</b>, Instalação, configuração Distros Debian e OpenSuse</p>
                             </div>
                             <div className="cardInfoContent">
-                                <img className="svg" alt={myTitle} src={imgProg} />
+                                <img className="svg" alt='imgProg' src={imgProg} />
                                 <p> <b>Desenvolvimento de páginas web</b>, utilizando as tecnologias HTML5, CSS3, SASS, Javascript e React.JS</p>
                             </div>
                             <div className="cardInfoContent">
-                                <img className="svg" alt={myTitle} src={imgBackEnd} />
+                                <img className="svg" alt='imgBackend' src={imgBackEnd} />
                                 <p> <b>Desenvolvimento em backend</b>, utilizando as linguagens de programação C/C++, Python, Java</p>
                             </div>
                         </div>
@@ -65,12 +65,12 @@ function Home() {
                     stateHtml = (
                         <div>
                             <div className="cardInfoContent">
-                                <img alt={myTitle} src={imgArt} />
+                                <img alt='imgArt' src={imgArt} />
                                 <p> <b>Desenho realista de rostos</b>, representação de expressões de faces utilizando lápis, grafite,
                                     caneta (ballpoint) e formato digital</p>
                             </div>
                             <div className="cardInfoContent">
-                                <img alt={myTitle} src={certUdemy} />
+                                <img alt='imgCert' src={certUdemy} />
                                 <p> <b>Udemy certificado de desenho</b>, O desenho de cabeças, rostos e retratos</p>
                             </div>
                         </div>
@@ -81,15 +81,15 @@ function Home() {
                     stateHtml = (
                         <div>
                             <div className="cardInfoContent">
-                                <img alt={myTitle} src={imgHeli} />
+                                <img alt="imgheli" src={imgHeli} />
                                 <p> <b>Heli R/C</b>, Eletric / Glow; Montagem, configuração e voo em modo Sport / 3D acrobatico</p>
                             </div>
                             <div className="cardInfoContent">
-                                <img alt={myTitle} src={imgDrone} />
+                                <img alt='imgDrone' src={imgDrone} />
                                 <p> <b>Drones</b>, Montagem, configuração de embarcados, fabricação de circuitos PDB e frames</p>
                             </div>
                             <div className="cardInfoContent">
-                                <img alt={myTitle} src={imgAero} />
+                                <img alt='imgAero' src={imgAero} />
                                 <p> <b>Aeromodelismo</b>, Montagem, configuração, fabricação de fuselagem voo estilo acrobático</p>
                             </div>
                         </div>
@@ -116,9 +116,8 @@ function Home() {
             lastTitle.current = myTitle;
             setFlgActive("false");
         }
-       
-        const timer = setTimeout(() => { 
-            setInfoText("");                     
+        console.log(myTitle + 'sdsd');
+        const timer = setTimeout(() => {                              
             setInfoText(showInfo());
             setFlgActive("true");  
         }, 2000);
