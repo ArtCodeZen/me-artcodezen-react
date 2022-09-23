@@ -1,5 +1,5 @@
 import "./home.css"
-import imageProfile from "../../assets/img/mePhoto.jpg";
+import imageProfile from "../../assets/img/mePhoto.webp";
 import imgArduino from '../../assets/pictures/ImagesForSite/embedded.svg';
 //import imgHardware from '../../assets/pictures/ImagesForSite/hardware.jpg';
 import imgProg from '../../assets/pictures/ImagesForSite/frontend.svg';
@@ -118,8 +118,9 @@ function Home() {
         }
         const timer = setTimeout(() => {
             setFlgActive("true");
+            setInfoText("");
             setInfoText(showInfo());
-        }, 1000);
+        }, 2000);
         return () => clearTimeout(timer);
     }, [myTitle, myTitles, flgActive]);
 
