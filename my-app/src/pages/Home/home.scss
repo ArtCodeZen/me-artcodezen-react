@@ -112,10 +112,10 @@ $my-general-color: rgb(162, 59, 59);
 }
 .selectedCardInfo {       
     &[flg_active='true']{
-        animation: 2s ease-in-out 0s 1 slideInFromLeft;  
+        animation: 1s ease-in-out 0s 1 slideInFromLeft;  
     }
     &[flg_active='false']{
-        animation: 2s ease-in-out 0s 1 forwards slideOutFromRight;  
+        animation: 1s ease-in-out 0s 1 forwards slideOutFromRight;  
 
     }
     div {

@@ -125,12 +125,12 @@
 }
 
 .selectedCardInfo[flg_active=true] {
-  -webkit-animation: 2s ease-in-out 0s 1 slideInFromLeft;
-          animation: 2s ease-in-out 0s 1 slideInFromLeft;
+  -webkit-animation: 1s ease-in-out 0s 1 slideInFromLeft;
+          animation: 1s ease-in-out 0s 1 slideInFromLeft;
 }
 .selectedCardInfo[flg_active=false] {
-  -webkit-animation: 2s ease-in-out 0s 1 forwards slideOutFromRight;
-          animation: 2s ease-in-out 0s 1 forwards slideOutFromRight;
+  -webkit-animation: 1s ease-in-out 0s 1 forwards slideOutFromRight;
+          animation: 1s ease-in-out 0s 1 forwards slideOutFromRight;
 }
 .selectedCardInfo div {
   width: 100%;

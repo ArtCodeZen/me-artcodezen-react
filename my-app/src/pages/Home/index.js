@@ -23,7 +23,7 @@ function Home() {
     const [myTitles, setTitles] = useState([]);
     const [infoText, setInfoText] = useState("");
     const [myTitle, setMyTitle] = useState("");
-    const [flgActive, setFlgActive] = useState("true");
+    const [flgActive, setFlgActive] = useState("false");
     const lastTitle = useRef();
     useEffect(() => {
 
@@ -98,24 +98,28 @@ function Home() {
                 default:
                     break;
             }
-            return (stateHtml);
+
+            return (<>
+                <h1>{myTitle}</h1>
+                {stateHtml}
+            </>
+            );
+
         }
         if (myTitles.length === 0) {
             setTitles([STATES.Programacao, STATES.Arte, STATES.Hobby]);
             setMyTitle(STATES.Programacao);
             lastTitle.current = myTitle;
-           
-        }       
+        }
         // adicionar o novo título se diferente
-        if(lastTitle.current !== myTitle){
-            console.log(lastTitle.current);
+        if (lastTitle.current !== myTitle) {
             lastTitle.current = myTitle;
             setFlgActive("false");
         }
-        const timer = setTimeout(()=>{
+        const timer = setTimeout(() => {
             setFlgActive("true");
             setInfoText(showInfo());
-        }, 2000);
+        }, 1000);
         return () => clearTimeout(timer);
     }, [myTitle, myTitles, flgActive]);
 
@@ -139,7 +143,7 @@ function Home() {
                 <div className="selectTitle">
                     {myTitles.map((item) => {
                         return (
-                            <button key={item} onClick={() => {                                
+                            <button key={item} onClick={() => {
                                 setMyTitle(item);
                             }
                             }>{item}</button>
@@ -148,7 +152,7 @@ function Home() {
                 </div>
             </div>
             <div className="selectedCardInfo" flg_active={flgActive}>
-                <h1>{myTitle}</h1>
+
                 {infoText}
             </div>
 
