@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/me-artcodezen-react/static/css/main.4d7389c8.css",
-    "main.js": "/me-artcodezen-react/static/js/main.175c4eef.js",
+    "main.css": "/me-artcodezen-react/static/css/main.998c0adc.css",
+    "main.js": "/me-artcodezen-react/static/js/main.2b1e0b15.js",
     "static/js/787.28cb0dcd.chunk.js": "/me-artcodezen-react/static/js/787.28cb0dcd.chunk.js",
     "static/media/art.webp": "/me-artcodezen-react/static/media/art.17e8cf14fff88dd1d38a.webp",
     "static/media/heli.webp": "/me-artcodezen-react/static/media/heli.81298e992635ee155764.webp",
@@ -14,12 +14,12 @@
     "static/media/frontend.svg": "/me-artcodezen-react/static/media/frontend.88825f3fb0e4b6f022eabdb0e1f44211.svg",
     "static/media/linux.svg": "/me-artcodezen-react/static/media/linux.cd1a12fdf110336fe27134428c51d9dc.svg",
     "index.html": "/me-artcodezen-react/index.html",
-    "main.4d7389c8.css.map": "/me-artcodezen-react/static/css/main.4d7389c8.css.map",
-    "main.175c4eef.js.map": "/me-artcodezen-react/static/js/main.175c4eef.js.map",
+    "main.998c0adc.css.map": "/me-artcodezen-react/static/css/main.998c0adc.css.map",
+    "main.2b1e0b15.js.map": "/me-artcodezen-react/static/js/main.2b1e0b15.js.map",
     "787.28cb0dcd.chunk.js.map": "/me-artcodezen-react/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d7389c8.css",
-    "static/js/main.175c4eef.js"
+    "static/css/main.998c0adc.css",
+    "static/js/main.2b1e0b15.js"
   ]
 }
