@@ -16,7 +16,7 @@
 }
 @-webkit-keyframes slideInFromLeft {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(-120%);
   }
   100% {
     transform: translateX(0);
@@ -24,10 +24,26 @@
 }
 @keyframes slideInFromLeft {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(-120%);
   }
   100% {
     transform: translateX(0);
+  }
+}
+@-webkit-keyframes slideOutFromRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-120%);
+  }
+}
+@keyframes slideOutFromRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-120%);
   }
 }
 .pageContent {
@@ -108,9 +124,13 @@
   color: white;
 }
 
-.selectedCardInfo {
+.selectedCardInfo[flg_active=true] {
   -webkit-animation: 2s ease-in-out 0s 1 slideInFromLeft;
           animation: 2s ease-in-out 0s 1 slideInFromLeft;
+}
+.selectedCardInfo[flg_active=false] {
+  -webkit-animation: 2s ease-in-out 0s 1 forwards slideOutFromRight;
+          animation: 2s ease-in-out 0s 1 forwards slideOutFromRight;
 }
 .selectedCardInfo div {
   width: 100%;

@@ -11,12 +11,20 @@ $my-general-color: rgb(162, 59, 59);
 }
 @keyframes slideInFromLeft {
     0% {
-      transform: translateX(-100%);
+      transform: translateX(-120%);
     }
     100% {
       transform: translateX(0);
     }
-  }
+}
+@keyframes slideOutFromRight {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-120%);
+    }
+}
  
 .pageContent {
     width: auto;
@@ -103,8 +111,13 @@ $my-general-color: rgb(162, 59, 59);
     }
 }
 .selectedCardInfo {       
-  
-    animation: 2s ease-in-out 0s 1 slideInFromLeft;  
+    &[flg_active='true']{
+        animation: 2s ease-in-out 0s 1 slideInFromLeft;  
+    }
+    &[flg_active='false']{
+        animation: 2s ease-in-out 0s 1 forwards slideOutFromRight;  
+
+    }
     div {
       
         width: 100%;

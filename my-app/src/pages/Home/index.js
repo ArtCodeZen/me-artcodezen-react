@@ -15,7 +15,7 @@ import imgHeli from '../../assets/pictures/ImagesForSite/Hobby/heli.webp';
 import imgDrone from '../../assets/pictures/ImagesForSite/Hobby/drone.webp';
 import imgAero from '../../assets/pictures/ImagesForSite/Hobby/aeromodel.svg';
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 function Home() {
 
 
@@ -23,7 +23,8 @@ function Home() {
     const [myTitles, setTitles] = useState([]);
     const [infoText, setInfoText] = useState("");
     const [myTitle, setMyTitle] = useState("");
-
+    const [flgActive, setFlgActive] = useState("true");
+    const lastTitle = useRef();
     useEffect(() => {
 
         const STATES =
@@ -33,7 +34,7 @@ function Home() {
             Hobby: "Hobby"
         }
         function showInfo() {
-           
+
             let stateHtml = "";
             switch (myTitle) {
                 case STATES.Programacao:
@@ -97,20 +98,26 @@ function Home() {
                 default:
                     break;
             }
-            return (
-            <div className="selectedCardInfo">
-                <h1>{myTitle}</h1>
-                {stateHtml}
-            </div>)
+            return (stateHtml);
         }
         if (myTitles.length === 0) {
             setTitles([STATES.Programacao, STATES.Arte, STATES.Hobby]);
             setMyTitle(STATES.Programacao);
+            lastTitle.current = myTitle;
+           
+        }       
+        // adicionar o novo título se diferente
+        if(lastTitle.current !== myTitle){
+            console.log(lastTitle.current);
+            lastTitle.current = myTitle;
+            setFlgActive("false");
         }
-        console.log(showInfo());
-        setInfoText(showInfo());
-
-    }, [myTitle, myTitles]);
+        const timer = setTimeout(()=>{
+            setFlgActive("true");
+            setInfoText(showInfo());
+        }, 2000);
+        return () => clearTimeout(timer);
+    }, [myTitle, myTitles, flgActive]);
 
     return (
         <section className="pageContent">
@@ -132,7 +139,7 @@ function Home() {
                 <div className="selectTitle">
                     {myTitles.map((item) => {
                         return (
-                            <button key={item} onClick={() => {                               
+                            <button key={item} onClick={() => {                                
                                 setMyTitle(item);
                             }
                             }>{item}</button>
@@ -140,8 +147,11 @@ function Home() {
                     })}
                 </div>
             </div>
-            {infoText}
-            
+            <div className="selectedCardInfo" flg_active={flgActive}>
+                <h1>{myTitle}</h1>
+                {infoText}
+            </div>
+
         </section >
     )
 }
