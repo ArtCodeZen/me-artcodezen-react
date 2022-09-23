@@ -17,6 +17,7 @@ $my-general-color: rgb(162, 59, 59);
       transform: translateX(0);
     }
   }
+ 
 .pageContent {
     width: auto;
     margin: auto 3%;
@@ -101,9 +102,9 @@ $my-general-color: rgb(162, 59, 59);
         }
     }
 }
-
 .selectedCardInfo {       
-    animation: 2s ease-in-out 0s 1 slideInFromLeft;        
+  
+    animation: 2s ease-in-out 0s 1 slideInFromLeft;  
     div {
       
         width: 100%;
@@ -137,5 +138,4 @@ $my-general-color: rgb(162, 59, 59);
             background-color: whitesmoke;
         }
     }
-
 }

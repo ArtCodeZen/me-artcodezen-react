@@ -107,7 +107,7 @@ function Home() {
             setTitles([STATES.Programacao, STATES.Arte, STATES.Hobby]);
             setMyTitle(STATES.Programacao);
         }
-       
+        console.log(showInfo());
         setInfoText(showInfo());
 
     }, [myTitle, myTitles]);
@@ -132,8 +132,7 @@ function Home() {
                 <div className="selectTitle">
                     {myTitles.map((item) => {
                         return (
-                            <button key={item} onClick={() => {
-                                setInfoText("");
+                            <button key={item} onClick={() => {                               
                                 setMyTitle(item);
                             }
                             }>{item}</button>
@@ -142,6 +141,7 @@ function Home() {
                 </div>
             </div>
             {infoText}
+            
         </section >
     )
 }
