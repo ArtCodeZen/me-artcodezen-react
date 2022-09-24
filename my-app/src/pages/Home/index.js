@@ -41,7 +41,7 @@ function Home() {
 
                     stateHtml = (
                         <div>
-                            <div className="cardInfoContent">
+                            <div className="cardInfoContent" >
                                 <img className="svg" alt='imgArduino' src={imgArduino} />
                                 <p><b>Programação para microcontroladores</b> na
                                     linguagem c/c++, experiencia com firmware para drones e IOT</p>
@@ -65,7 +65,7 @@ function Home() {
                     stateHtml = (
                         <div>
                             <div className="cardInfoContent">
-                                <img alt='imgArt' src={imgArt} />
+                                <img alt='imgArt' src={imgArt}/>
                                 <p> <b>Desenho realista de rostos</b>, representação de expressões de faces utilizando lápis, grafite,
                                     caneta (ballpoint) e formato digital</p>
                             </div>
@@ -116,8 +116,9 @@ function Home() {
             lastTitle.current = myTitle;
             setFlgActive("false");
         }
-        console.log(myTitle + 'sdsd');
-        const timer = setTimeout(() => {                              
+       
+       
+        const timer = setTimeout(() => {                                    
             setInfoText(showInfo());
             setFlgActive("true");  
         }, 2000);
@@ -152,7 +153,7 @@ function Home() {
                     })}
                 </div>
             </div>
-            <div className="selectedCardInfo" flg_active={flgActive}>
+            <div className="selectedCardInfo" flg_active={flgActive} >
                 {infoText}
             </div>
 
