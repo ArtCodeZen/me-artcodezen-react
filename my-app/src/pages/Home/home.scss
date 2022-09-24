@@ -133,16 +133,15 @@ $my-general-color: rgb(162, 59, 59);
 }
 
 .selectedCardInfo {
-   
+    max-height: 1500px;
+    transition: max-height 1s ease-in-out;
     &[flg_active='true'] {
         animation: 1s ease-in-out 0s 1 slideInFromLeft;
     }
-
-    &[flg_active='false'] {
-        animation: 1s ease-in-out 0s 1 forwards visibilityHidden;  
-        
+    &[flg_active='false'] {      
+        animation: 1s ease-in-out 0s 1 forwards visibilityHidden;    
+        max-height: 0;      
         //animation: 1s ease-in-out 0s 1 forwards heightMinimize;  
-
     }
     div {
 
