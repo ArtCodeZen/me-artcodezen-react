@@ -115,13 +115,13 @@ function Home() {
         if (lastTitle.current !== myTitle) {
             lastTitle.current = myTitle;
             setFlgActive("false");
-        }
-       
+            setInfoText(<><h1>CARREGANDO</h1></>)
+        }       
        
         const timer = setTimeout(() => {                                    
             setInfoText(showInfo());
             setFlgActive("true");  
-        }, 2000);
+        }, 1500);
         return () => clearTimeout(timer);
     }, [myTitle, myTitles, flgActive]);
 
