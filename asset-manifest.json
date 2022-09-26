@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/me-artcodezen-react/static/css/main.2bb1abad.css",
-    "main.js": "/me-artcodezen-react/static/js/main.618731f2.js",
+    "main.css": "/me-artcodezen-react/static/css/main.57602523.css",
+    "main.js": "/me-artcodezen-react/static/js/main.f5217db3.js",
     "static/js/787.28cb0dcd.chunk.js": "/me-artcodezen-react/static/js/787.28cb0dcd.chunk.js",
-    "static/media/about.webp": "/me-artcodezen-react/static/media/about.b713bbdaba23b2d81232.webp",
+    "static/media/about.webp": "/me-artcodezen-react/static/media/about.9452ec9b4ed3062fd3a7.webp",
     "static/media/art.webp": "/me-artcodezen-react/static/media/art.17e8cf14fff88dd1d38a.webp",
     "static/media/heli.webp": "/me-artcodezen-react/static/media/heli.81298e992635ee155764.webp",
     "static/media/mePhoto.webp": "/me-artcodezen-react/static/media/mePhoto.33a6e53f90c224e98eea.webp",
@@ -15,12 +15,12 @@
     "static/media/frontend.svg": "/me-artcodezen-react/static/media/frontend.cd7e9691efdbe4cf583ca71467bbced1.svg",
     "static/media/linux.svg": "/me-artcodezen-react/static/media/linux.900f9dafd6ac0f3b59733a45b77f9f0e.svg",
     "index.html": "/me-artcodezen-react/index.html",
-    "main.2bb1abad.css.map": "/me-artcodezen-react/static/css/main.2bb1abad.css.map",
-    "main.618731f2.js.map": "/me-artcodezen-react/static/js/main.618731f2.js.map",
+    "main.57602523.css.map": "/me-artcodezen-react/static/css/main.57602523.css.map",
+    "main.f5217db3.js.map": "/me-artcodezen-react/static/js/main.f5217db3.js.map",
     "787.28cb0dcd.chunk.js.map": "/me-artcodezen-react/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2bb1abad.css",
-    "static/js/main.618731f2.js"
+    "static/css/main.57602523.css",
+    "static/js/main.f5217db3.js"
   ]
 }
