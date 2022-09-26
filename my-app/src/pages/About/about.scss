@@ -1,10 +1,12 @@
 @keyframes backgroundVisibility {
     from {
         background-color: rgba($color: #000000, $alpha: 1.0);
+        color: white;
     }
 
     to {
-        background-color: rgba($color: #000000, $alpha: 0.0);;
+        background-color: rgba($color: #000000, $alpha: 0.0);
+        color: #f5c22e;
     }
 }
 
@@ -40,7 +42,7 @@
         img {
 
             width: 100%;
-            height: 250px;
+            height: 200px;
             object-fit: cover;
         }
 
