@@ -27,7 +27,8 @@ function Home() {
     {
         Programacao: "Programação",
         Arte: "Arte",
-        Hobby: "Hobby"
+        Hobby: "Hobby",
+        Loading: "Loading"
     }
     if (myTitles.length === 0) {
         setTitles([STATES.Programacao, STATES.Arte, STATES.Hobby]);
@@ -44,9 +45,8 @@ function Home() {
             return timeout;
 
         }
-        updateContent(1500);
-        
-
+        const time = updateContent(1000);            
+        return ()=> {clearTimeout(time)};
 
 
     }, [myTitle]);
@@ -126,6 +126,11 @@ function Home() {
                             <img alt='imgAero' src={imgAero} />
                             <p> <b>Aeromodelismo</b>, Montagem, configuração, fabricação de fuselagem voo estilo acrobático</p>
                         </div>
+                    </div>
+                )}
+                {mySelectedTitle === STATES.Loading && (
+                    <div>
+                        <h1>Loading!</h1>
                     </div>
                 )}
             </div>
