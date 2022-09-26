@@ -44,10 +44,10 @@ function Home() {
             }, timerMs);
             return timeout;
 
-        }
+        }  
+
         const time = updateContent(1000);            
         return ()=> {clearTimeout(time)};
-
 
     }, [myTitle]);
 
