@@ -45,10 +45,8 @@ function Home() {
             return timeout;
 
         }  
-
         const time = updateContent(1000);            
         return ()=> {clearTimeout(time)};
-
     }, [myTitle]);
 
     return (
