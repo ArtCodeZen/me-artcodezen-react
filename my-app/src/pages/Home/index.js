@@ -15,115 +15,41 @@ import imgHeli from '../../assets/pictures/ImagesForSite/Hobby/heli.webp';
 import imgDrone from '../../assets/pictures/ImagesForSite/Hobby/drone.webp';
 import imgAero from '../../assets/pictures/ImagesForSite/Hobby/aeromodel.svg';
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 function Home() {
-
-
-
     const [myTitles, setTitles] = useState([]);
-    const [infoText, setInfoText] = useState("");
+    const [mySelectedTitle, setMySelectedTitle] = useState("");
     const [myTitle, setMyTitle] = useState("");
-    const [flgActive, setFlgActive] = useState("true");
-    const lastTitle = useRef();
+    const [flgActive, setFlgActive] = useState("false");
+
+
+    const STATES =
+    {
+        Programacao: "Programação",
+        Arte: "Arte",
+        Hobby: "Hobby"
+    }
+    if (myTitles.length === 0) {
+        setTitles([STATES.Programacao, STATES.Arte, STATES.Hobby]);
+        setMyTitle(STATES.Programacao);
+    }    
+
     useEffect(() => {
-
-        const STATES =
-        {
-            Programacao: "Programação",
-            Arte: "Arte",
-            Hobby: "Hobby"
-        }
-        function showInfo() {
-
-            let stateHtml = "";
-            switch (myTitle) {
-                case STATES.Programacao:
-
-                    stateHtml = (
-                        <div>
-                            <div className="cardInfoContent" >
-                                <img className="svg" alt='imgArduino' src={imgArduino} />
-                                <p><b>Programação para microcontroladores</b> na
-                                    linguagem c/c++, experiencia com firmware para drones e IOT</p>
-                            </div>
-                            <div className="cardInfoContent">
-                                <img className="svg" alt='imgLinux' src={imgLinux} />
-                                <p> <b>Sistema Linux</b>, Instalação, configuração Distros Debian e OpenSuse</p>
-                            </div>
-                            <div className="cardInfoContent">
-                                <img className="svg" alt='imgProg' src={imgProg} />
-                                <p> <b>Desenvolvimento de páginas web</b>, utilizando as tecnologias HTML5, CSS3, SASS, Javascript e React.JS</p>
-                            </div>
-                            <div className="cardInfoContent">
-                                <img className="svg" alt='imgBackend' src={imgBackEnd} />
-                                <p> <b>Desenvolvimento em backend</b>, utilizando as linguagens de programação C/C++, Python, Java</p>
-                            </div>
-                        </div>
-                    )
-                    break;
-                case STATES.Arte:
-                    stateHtml = (
-                        <div>
-                            <div className="cardInfoContent">
-                                <img alt='imgArt' src={imgArt}/>
-                                <p> <b>Desenho realista de rostos</b>, representação de expressões de faces utilizando lápis, grafite,
-                                    caneta (ballpoint) e formato digital</p>
-                            </div>
-                            <div className="cardInfoContent">
-                                <img alt='imgCert' src={certUdemy} />
-                                <p> <b>Udemy certificado de desenho</b>, O desenho de cabeças, rostos e retratos</p>
-                            </div>
-                        </div>
-
-                    );
-                    break;
-                case STATES.Hobby:
-                    stateHtml = (
-                        <div>
-                            <div className="cardInfoContent">
-                                <img alt="imgheli" src={imgHeli} />
-                                <p> <b>Heli R/C</b>, Eletric / Glow; Montagem, configuração e voo em modo Sport / 3D acrobatico</p>
-                            </div>
-                            <div className="cardInfoContent">
-                                <img alt='imgDrone' src={imgDrone} />
-                                <p> <b>Drones</b>, Montagem, configuração de embarcados, fabricação de circuitos PDB e frames</p>
-                            </div>
-                            <div className="cardInfoContent">
-                                <img alt='imgAero' src={imgAero} />
-                                <p> <b>Aeromodelismo</b>, Montagem, configuração, fabricação de fuselagem voo estilo acrobático</p>
-                            </div>
-                        </div>
-                    );
-                    break;
-                default:
-                    break;
-            }
-
-            return (<>
-                <h1>{myTitle}</h1>
-                {stateHtml}
-            </>
-            );
-
-        }
-        if (myTitles.length === 0) {
-            setTitles([STATES.Programacao, STATES.Arte, STATES.Hobby]);
-            setMyTitle(STATES.Programacao);
-            lastTitle.current = myTitle;
-        }
-        // adicionar o novo título se diferente
-        if (lastTitle.current !== myTitle) {
-            lastTitle.current = myTitle;
+        function updateContent(timerMs) {            
             setFlgActive("false");
-            setInfoText(<><h1>CARREGANDO</h1></>)
-        }       
-       
-        const timer = setTimeout(() => {                                    
-            setInfoText(showInfo());
-            setFlgActive("true");  
-        }, 1500);
-        return () => clearTimeout(timer);
-    }, [myTitle, myTitles, flgActive]);
+            const timeout = setTimeout(() => {
+                setMySelectedTitle(myTitle);
+                setFlgActive("true");
+            }, timerMs);
+            return timeout;
+
+        }
+        updateContent(1500);
+        
+
+
+
+    }, [myTitle]);
 
     return (
         <section className="pageContent">
@@ -154,7 +80,54 @@ function Home() {
                 </div>
             </div>
             <div className="selectedCardInfo" flg_active={flgActive} >
-                {infoText}
+
+                {mySelectedTitle === STATES.Programacao && (
+                    <div>
+                        <div className="cardInfoContent" >
+                            <img className="svg" alt='imgArduino' src={imgArduino} />
+                            <p><b>Programação para microcontroladores</b> na
+                                linguagem c/c++, experiencia com firmware para drones e IOT</p>
+                        </div>
+                        <div className="cardInfoContent">
+                            <img className="svg" alt='imgLinux' src={imgLinux} />
+                            <p> <b>Sistema Linux</b>, Instalação, configuração Distros Debian e OpenSuse</p>
+                        </div>
+                        <div className="cardInfoContent">
+                            <img className="svg" alt='imgProg' src={imgProg} />
+                            <p> <b>Desenvolvimento de páginas web</b>, utilizando as tecnologias HTML5, CSS3, SASS, Javascript e React.JS</p>
+                        </div>
+                        <div className="cardInfoContent">
+                            <img className="svg" alt='imgBackend' src={imgBackEnd} />
+                            <p> <b>Desenvolvimento em backend</b>, utilizando as linguagens de programação C/C++, Python, Java</p>
+                        </div>
+                    </div>)}
+                {mySelectedTitle === STATES.Arte && (<div>
+                    <div className="cardInfoContent">
+                        <img alt='imgArt' src={imgArt} />
+                        <p> <b>Desenho realista de rostos</b>, representação de expressões de faces utilizando lápis, grafite,
+                            caneta (ballpoint) e formato digital</p>
+                    </div>
+                    <div className="cardInfoContent">
+                        <img alt='imgCert' src={certUdemy} />
+                        <p> <b>Udemy certificado de desenho</b>, O desenho de cabeças, rostos e retratos</p>
+                    </div>
+                </div>)}
+                {mySelectedTitle === STATES.Hobby && (
+                    <div>
+                        <div className="cardInfoContent">
+                            <img alt="imgheli" src={imgHeli} />
+                            <p> <b>Heli R/C</b>, Eletric / Glow; Montagem, configuração e voo em modo Sport / 3D acrobatico</p>
+                        </div>
+                        <div className="cardInfoContent">
+                            <img alt='imgDrone' src={imgDrone} />
+                            <p> <b>Drones</b>, Montagem, configuração de embarcados, fabricação de circuitos PDB e frames</p>
+                        </div>
+                        <div className="cardInfoContent">
+                            <img alt='imgAero' src={imgAero} />
+                            <p> <b>Aeromodelismo</b>, Montagem, configuração, fabricação de fuselagem voo estilo acrobático</p>
+                        </div>
+                    </div>
+                )}
             </div>
 
         </section >
