@@ -1,4 +1,4 @@
-$my-general-color: rgb(162, 59, 59);
+$my-general-color: #a23b3b;
 
 @keyframes colorAnimation {
     0% {
@@ -86,7 +86,7 @@ $my-general-color: rgb(162, 59, 59);
     align-items: center;
     padding: 10px;
     width: 50%;
-    background-color: whitesmoke;
+    background-color: inherit;
 
     p {
         text-align: justify;

@@ -1,0 +1,24 @@
+.pageContent{
+    width: auto;
+    margin: auto 3%; 
+}
+.infoCardAbout{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    article{
+        margin: 10px 0px;
+        background-color: inherit;
+        width: 80%;
+        p{
+            margin: 10px 0px;
+        }
+        &:first-child{            
+            background-color: inherit;
+            text-align: justify;
+        }
+    }
+}
