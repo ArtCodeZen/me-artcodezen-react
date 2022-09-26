@@ -41,7 +41,7 @@ function About() {
                     <p> Este site foi desenvolvido utilizando o serviço de hospedagem gratuito
                         do <a href="https://pages.github.com/"><b>github pages</b></a> , mas com uma configuração modificada para trabalhar com
                         a biblioteca do <a href="https://pt-br.reactjs.org/"><b>ReactJs</b></a>. Veja esta configuração seguindo os passos de
-                        configuração com o <a href="https://github.com/gitname/react-gh-pages">react-gh-pages</a>. Algumas das tecnologias usadas
+                        configuração com o <a href="https://github.com/gitname/react-gh-pages"><b>react-gh-pages</b></a>. Algumas das tecnologias usadas
                         dentro deste site são: HTML5; CSS3; SASS; Javascript e ReactJS.
 
                     </p>
