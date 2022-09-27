@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/me-artcodezen-react/static/css/main.57602523.css",
-    "main.js": "/me-artcodezen-react/static/js/main.f5217db3.js",
+    "main.js": "/me-artcodezen-react/static/js/main.583600eb.js",
     "static/js/787.28cb0dcd.chunk.js": "/me-artcodezen-react/static/js/787.28cb0dcd.chunk.js",
     "static/media/about.webp": "/me-artcodezen-react/static/media/about.9452ec9b4ed3062fd3a7.webp",
     "static/media/art.webp": "/me-artcodezen-react/static/media/art.17e8cf14fff88dd1d38a.webp",
@@ -16,11 +16,11 @@
     "static/media/linux.svg": "/me-artcodezen-react/static/media/linux.900f9dafd6ac0f3b59733a45b77f9f0e.svg",
     "index.html": "/me-artcodezen-react/index.html",
     "main.57602523.css.map": "/me-artcodezen-react/static/css/main.57602523.css.map",
-    "main.f5217db3.js.map": "/me-artcodezen-react/static/js/main.f5217db3.js.map",
+    "main.583600eb.js.map": "/me-artcodezen-react/static/js/main.583600eb.js.map",
     "787.28cb0dcd.chunk.js.map": "/me-artcodezen-react/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.57602523.css",
-    "static/js/main.f5217db3.js"
+    "static/js/main.583600eb.js"
   ]
 }
