@@ -18,7 +18,7 @@ function About() {
                 <article>
                     <h3>Sobre mim</h3>
                     <p>No começo do meu aprendizado de programação tive
-                        bastante dificultade de entender o que estava se
+                        bastante dificuldade de entender o que estava se
                         passando a cada linha de código. Comecei com a
                         linguagem Pascal na epoca da faculdade, depois de
                         um tempo comecei a ter contato com a linguagem C / C++
