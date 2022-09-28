@@ -6,7 +6,7 @@ function About() {
 
 
     return (
-        <section className='pageContent'>
+        <div className='pageContent'>
             <div className="infoCardAbout">
                 <article>
                     <img src={imgAbout} alt="about" width='100' height='100'></img>
@@ -50,7 +50,7 @@ function About() {
 
             </div>
 
-        </section>
+        </div>
     )
 }
 export default About;

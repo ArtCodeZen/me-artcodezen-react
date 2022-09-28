@@ -1,0 +1,36 @@
+.techContent {
+    width: auto;
+    margin: auto 3%;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.myItems {
+    margin: auto;
+    width: 70%;
+   
+    article {
+        text-align: left;
+        text-transform: uppercase;
+        margin: 10px 0;
+    }
+    .cardContent {           
+        display: block;      
+        width: 100%;
+      
+        .imgContainer {
+            float: left;
+            width: 22%;
+            margin: 0px 1px;
+          
+        }
+       
+      
+
+
+    }
+
+
+}

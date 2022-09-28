@@ -1,0 +1,29 @@
+.techContent {
+  width: auto;
+  margin: auto 3%;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.myItems {
+  margin: auto;
+  width: 70%;
+}
+.myItems article {
+  text-align: left;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+.myItems .cardContent {
+  display: block;
+  width: 100%;
+}
+.myItems .cardContent .imgContainer {
+  float: left;
+  width: 22%;
+  margin: 0px 1px;
+}/*# sourceMappingURL=technologies.css.map */
