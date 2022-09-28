@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/me-artcodezen-react/static/css/main.5ce53460.css",
+    "main.css": "/me-artcodezen-react/static/css/main.a52944d8.css",
     "main.js": "/me-artcodezen-react/static/js/main.0a6d7f0d.js",
     "static/js/787.28cb0dcd.chunk.js": "/me-artcodezen-react/static/js/787.28cb0dcd.chunk.js",
     "static/media/about.webp": "/me-artcodezen-react/static/media/about.9452ec9b4ed3062fd3a7.webp",
@@ -45,12 +45,12 @@
     "static/media/c.svg": "/me-artcodezen-react/static/media/c.13f24c473f4fd7f944b1410cc8058a89.svg",
     "static/media/npm.svg": "/me-artcodezen-react/static/media/npm.87689eab730642c86d2b01f3ef4a19e3.svg",
     "static/media/windows.svg": "/me-artcodezen-react/static/media/windows.c6bdcf3339e2ba9c67ed5551a4f574d6.svg",
-    "main.5ce53460.css.map": "/me-artcodezen-react/static/css/main.5ce53460.css.map",
+    "main.a52944d8.css.map": "/me-artcodezen-react/static/css/main.a52944d8.css.map",
     "main.0a6d7f0d.js.map": "/me-artcodezen-react/static/js/main.0a6d7f0d.js.map",
     "787.28cb0dcd.chunk.js.map": "/me-artcodezen-react/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ce53460.css",
+    "static/css/main.a52944d8.css",
     "static/js/main.0a6d7f0d.js"
   ]
 }
