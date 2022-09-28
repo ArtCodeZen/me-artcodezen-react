@@ -17,11 +17,12 @@
         margin: 10px 0;
     }
     .cardContent {           
-        display: block;      
-        width: 100%;
       
-        .imgContainer {
-            float: left;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        .imgContainer {            
+            display: inline-block;                 
             width: 22%;           
             margin: 0px 1px;
             img{

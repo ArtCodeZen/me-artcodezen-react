@@ -19,11 +19,12 @@
   margin: 10px 0;
 }
 .myItems .cardContent {
-  display: block;
   width: 100%;
+  margin: auto;
+  text-align: center;
 }
 .myItems .cardContent .imgContainer {
-  float: left;
+  display: inline-block;
   width: 22%;
   margin: 0px 1px;
 }
