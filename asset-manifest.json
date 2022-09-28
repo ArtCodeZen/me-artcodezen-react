@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/me-artcodezen-react/static/css/main.a52944d8.css",
-    "main.js": "/me-artcodezen-react/static/js/main.0a6d7f0d.js",
+    "main.js": "/me-artcodezen-react/static/js/main.c0000c8c.js",
     "static/js/787.28cb0dcd.chunk.js": "/me-artcodezen-react/static/js/787.28cb0dcd.chunk.js",
     "static/media/about.webp": "/me-artcodezen-react/static/media/about.9452ec9b4ed3062fd3a7.webp",
     "static/media/art.webp": "/me-artcodezen-react/static/media/art.17e8cf14fff88dd1d38a.webp",
@@ -35,6 +35,7 @@
     "static/media/yarn.svg": "/me-artcodezen-react/static/media/yarn.1e8d8629938ae4d781a556a761ae3b18.svg",
     "static/media/firebase.svg": "/me-artcodezen-react/static/media/firebase.78c5aa0c6c7850484a86c44b87edb341.svg",
     "static/media/nodejs.svg": "/me-artcodezen-react/static/media/nodejs.8629b14e617e5ef13fedea0da8235e11.svg",
+    "static/media/java.svg": "/me-artcodezen-react/static/media/java.fa3aaa0d9601f02765fd0f91adf5f205.svg",
     "static/media/git.svg": "/me-artcodezen-react/static/media/git.ab7548110aa10ed62b9ffbbd525e1644.svg",
     "static/media/heroku.svg": "/me-artcodezen-react/static/media/heroku.4d4fc4394168e38b04e01c0371210861.svg",
     "static/media/javascript.svg": "/me-artcodezen-react/static/media/javascript.4c1b5332c1b1057928f6f06cf972c91c.svg",
@@ -46,11 +47,11 @@
     "static/media/npm.svg": "/me-artcodezen-react/static/media/npm.87689eab730642c86d2b01f3ef4a19e3.svg",
     "static/media/windows.svg": "/me-artcodezen-react/static/media/windows.c6bdcf3339e2ba9c67ed5551a4f574d6.svg",
     "main.a52944d8.css.map": "/me-artcodezen-react/static/css/main.a52944d8.css.map",
-    "main.0a6d7f0d.js.map": "/me-artcodezen-react/static/js/main.0a6d7f0d.js.map",
+    "main.c0000c8c.js.map": "/me-artcodezen-react/static/js/main.c0000c8c.js.map",
     "787.28cb0dcd.chunk.js.map": "/me-artcodezen-react/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a52944d8.css",
-    "static/js/main.0a6d7f0d.js"
+    "static/js/main.c0000c8c.js"
   ]
 }
