@@ -22,8 +22,13 @@
       
         .imgContainer {
             float: left;
-            width: 22%;
+            width: 22%;           
             margin: 0px 1px;
+            img{
+                width: 100%;
+                object-fit: cover;
+              
+            }
           
         }
        

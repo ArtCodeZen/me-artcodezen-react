@@ -26,4 +26,9 @@
   float: left;
   width: 22%;
   margin: 0px 1px;
+}
+.myItems .cardContent .imgContainer img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=technologies.css.map */
