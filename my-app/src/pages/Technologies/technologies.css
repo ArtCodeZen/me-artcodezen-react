@@ -31,6 +31,9 @@
   margin: auto;
   width: 70%;
 }
+.myItems:nth-child(odd) {
+  background-color: whitesmoke;
+}
 .myItems article {
   text-align: left;
   text-transform: uppercase;

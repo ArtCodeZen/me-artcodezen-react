@@ -17,12 +17,15 @@
     content: "";
     clear: both;
     display: table;
-  }
+}
 .myItems {
     margin: auto;
     width: 70%;
-   
+    &:nth-child(odd){
+        background-color: whitesmoke;
+    }
     article {
+        
         text-align: left;
         text-transform: uppercase;
         margin: 10px 0;
