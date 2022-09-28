@@ -1,6 +1,17 @@
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
 .techContent {
     width: auto;
     margin: auto 3%;
+    animation: 2s ease-out 0s 1 slideInFromLeft;
+
 }
 .clearfix::after {
     content: "";
@@ -23,8 +34,8 @@
         text-align: center;
         .imgContainer {            
             display: inline-block;                 
-            width: 25%;           
-            margin: 0px 1%;
+            width: 22%;           
+            margin: 0px 10px;
             img{
                 width: 100%;
                 object-fit: cover;
