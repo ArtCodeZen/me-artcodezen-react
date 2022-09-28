@@ -10,23 +10,24 @@ import react from '../../assets/pictures/ImagesForSite/Tech/Frontend/react.svg';
 // embedded
 import esp from '../../assets/pictures/ImagesForSite/Tech/Embedded/esp.svg';
 import stm from '../../assets/pictures/ImagesForSite/Tech/Embedded/stm.svg';
-import arduino from '../../assets/pictures/ImagesForSite/Tech/Embedded/arduino.svg'
+import arduino from '../../assets/pictures/ImagesForSite/Tech/Embedded/arduino.svg';
 // backend
 import c from '../../assets/pictures/ImagesForSite/Tech/Backend/c.svg'
-import cplusplus from '../../assets/pictures/ImagesForSite/Tech/Backend/cplusplus.svg'
-import python from '../../assets/pictures/ImagesForSite/Tech/Backend/python.svg'
-import node from '../../assets/pictures/ImagesForSite/Tech/Backend/nodejs.svg'
-import android from '../../assets/pictures/ImagesForSite/Tech/Backend/android.svg'
+import cplusplus from '../../assets/pictures/ImagesForSite/Tech/Backend/cplusplus.svg';
+import python from '../../assets/pictures/ImagesForSite/Tech/Backend/python.svg';
+import node from '../../assets/pictures/ImagesForSite/Tech/Backend/nodejs.svg';
+import android from '../../assets/pictures/ImagesForSite/Tech/Backend/android.svg';
+import java from '../../assets/pictures/ImagesForSite/Tech/Backend/java.svg';
 // databases
-import mysql from '../../assets/pictures/ImagesForSite/Tech/Database/mysql.svg'
-import firebase from '../../assets/pictures/ImagesForSite/Tech/Database/firebase.svg'
-import postgresql from '../../assets/pictures/ImagesForSite/Tech/Database/postgresql.svg'
+import mysql from '../../assets/pictures/ImagesForSite/Tech/Database/mysql.svg';
+import firebase from '../../assets/pictures/ImagesForSite/Tech/Database/firebase.svg';
+import postgresql from '../../assets/pictures/ImagesForSite/Tech/Database/postgresql.svg';
 // SO
-import windows from '../../assets/pictures/ImagesForSite/Tech/SO/windows.svg'
-import linux from '../../assets/pictures/ImagesForSite/Tech/SO/linux.svg'
-import debian from '../../assets/pictures/ImagesForSite/Tech/SO/debian.svg'
-import opensuse from '../../assets/pictures/ImagesForSite/Tech/SO/opensuse.svg'
-import ubuntu from '../../assets/pictures/ImagesForSite/Tech/SO/ubuntu.svg'
+import windows from '../../assets/pictures/ImagesForSite/Tech/SO/windows.svg';
+import linux from '../../assets/pictures/ImagesForSite/Tech/SO/linux.svg';
+import debian from '../../assets/pictures/ImagesForSite/Tech/SO/debian.svg';
+import opensuse from '../../assets/pictures/ImagesForSite/Tech/SO/opensuse.svg';
+import ubuntu from '../../assets/pictures/ImagesForSite/Tech/SO/ubuntu.svg';
 //Servers
 import heroku from '../../assets/pictures/ImagesForSite/Tech/Servers/heroku.svg';
 import amazon from '../../assets/pictures/ImagesForSite/Tech/Servers/amazonwebservices.svg';
@@ -42,7 +43,7 @@ import filezilla from '../../assets/pictures/ImagesForSite/Tech/Others/filezilla
 
 function Technologies() {
     const arrayFrontEnd = [imghtml, css3, sass, javascript, jquery, react];
-    const arrayBackend = [c, cplusplus, python, node, android];
+    const arrayBackend = [c, cplusplus, python, node, android, java];
     const arrayEmbedded = [arduino, esp, stm];
     const arrayDatabases = [mysql, firebase, postgresql];
     const arraySOs = [windows, linux, debian, ubuntu, opensuse];
