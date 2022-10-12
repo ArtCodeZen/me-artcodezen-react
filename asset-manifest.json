@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/me-artcodezen-react/static/css/main.a52944d8.css",
-    "main.js": "/me-artcodezen-react/static/js/main.c0000c8c.js",
+    "main.css": "/me-artcodezen-react/static/css/main.97688f7d.css",
+    "main.js": "/me-artcodezen-react/static/js/main.bd48ce80.js",
     "static/js/787.28cb0dcd.chunk.js": "/me-artcodezen-react/static/js/787.28cb0dcd.chunk.js",
     "static/media/about.webp": "/me-artcodezen-react/static/media/about.9452ec9b4ed3062fd3a7.webp",
     "static/media/art.webp": "/me-artcodezen-react/static/media/art.17e8cf14fff88dd1d38a.webp",
@@ -37,21 +37,25 @@
     "static/media/nodejs.svg": "/me-artcodezen-react/static/media/nodejs.8629b14e617e5ef13fedea0da8235e11.svg",
     "static/media/java.svg": "/me-artcodezen-react/static/media/java.fa3aaa0d9601f02765fd0f91adf5f205.svg",
     "static/media/git.svg": "/me-artcodezen-react/static/media/git.ab7548110aa10ed62b9ffbbd525e1644.svg",
+    "static/media/instagram.svg": "/me-artcodezen-react/static/media/instagram.3a5fe7e7d09ce81ce8d11bd933fd1631.svg",
     "static/media/heroku.svg": "/me-artcodezen-react/static/media/heroku.4d4fc4394168e38b04e01c0371210861.svg",
+    "static/media/github.svg": "/me-artcodezen-react/static/media/github.b40b1c0378274f892133dea1253e8aa8.svg",
     "static/media/javascript.svg": "/me-artcodezen-react/static/media/javascript.4c1b5332c1b1057928f6f06cf972c91c.svg",
     "static/media/css3.svg": "/me-artcodezen-react/static/media/css3.1d023123249332b8246d98e506eaa7a6.svg",
     "static/media/html5.svg": "/me-artcodezen-react/static/media/html5.ed5a66323fb7466700b1b551dcf00ea5.svg",
     "static/media/cplusplus.svg": "/me-artcodezen-react/static/media/cplusplus.f5ed104b00a745b1e7719024c2d6ce30.svg",
+    "static/media/youtube.svg": "/me-artcodezen-react/static/media/youtube.062fa3bb8e600ca852a6be8895c2cfec.svg",
     "index.html": "/me-artcodezen-react/index.html",
     "static/media/c.svg": "/me-artcodezen-react/static/media/c.13f24c473f4fd7f944b1410cc8058a89.svg",
+    "static/media/tiktok.svg": "/me-artcodezen-react/static/media/tiktok.ecaa2c3a2e0fe0ed862d8928e88f7646.svg",
     "static/media/npm.svg": "/me-artcodezen-react/static/media/npm.87689eab730642c86d2b01f3ef4a19e3.svg",
     "static/media/windows.svg": "/me-artcodezen-react/static/media/windows.c6bdcf3339e2ba9c67ed5551a4f574d6.svg",
-    "main.a52944d8.css.map": "/me-artcodezen-react/static/css/main.a52944d8.css.map",
-    "main.c0000c8c.js.map": "/me-artcodezen-react/static/js/main.c0000c8c.js.map",
+    "main.97688f7d.css.map": "/me-artcodezen-react/static/css/main.97688f7d.css.map",
+    "main.bd48ce80.js.map": "/me-artcodezen-react/static/js/main.bd48ce80.js.map",
     "787.28cb0dcd.chunk.js.map": "/me-artcodezen-react/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a52944d8.css",
-    "static/js/main.c0000c8c.js"
+    "static/css/main.97688f7d.css",
+    "static/js/main.bd48ce80.js"
   ]
 }
