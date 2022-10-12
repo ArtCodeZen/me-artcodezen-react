@@ -1,20 +1,40 @@
 $my-general-color: rgb(162, 59, 59);
 
-.footer{       
+.footer {
     width: 100%;
-    height: 60px;
+    max-height: 600px;
     margin-top: 10px;
-    background-color: $my-general-color;    
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    p{
-        color: white;
-    }    
-    
+    background-color: $my-general-color;
+
+
 }
-.links{
-    display: flex;    
+
+.author {
+    text-align: center;
+    padding-top: 10px;
+    p {
+        color: white;
+        text-transform: uppercase;
+    }
+}
+
+.links {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+   
+    .itemsList {
+        width: 6%;
+        margin: 30px 20px;
+        display: inline-block;
+        transition: all 0.5s ease-in-out;
+        img {
+            width: 100%;           
+            object-fit: cover;
+        }
+        &:hover{
+           margin: 0px 10%;
+        }
+    }
+
 }
