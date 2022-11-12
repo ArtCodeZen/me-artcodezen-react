@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/me-artcodezen-react/static/css/main.97688f7d.css",
-    "main.js": "/me-artcodezen-react/static/js/main.bd48ce80.js",
+    "main.js": "/me-artcodezen-react/static/js/main.59792090.js",
     "static/js/787.28cb0dcd.chunk.js": "/me-artcodezen-react/static/js/787.28cb0dcd.chunk.js",
     "static/media/about.webp": "/me-artcodezen-react/static/media/about.9452ec9b4ed3062fd3a7.webp",
     "static/media/art.webp": "/me-artcodezen-react/static/media/art.17e8cf14fff88dd1d38a.webp",
@@ -48,14 +48,15 @@
     "index.html": "/me-artcodezen-react/index.html",
     "static/media/c.svg": "/me-artcodezen-react/static/media/c.13f24c473f4fd7f944b1410cc8058a89.svg",
     "static/media/tiktok.svg": "/me-artcodezen-react/static/media/tiktok.ecaa2c3a2e0fe0ed862d8928e88f7646.svg",
+    "static/media/deviantart.svg": "/me-artcodezen-react/static/media/deviantart.c64d4562b37777389297d5a8ee6cf95f.svg",
     "static/media/npm.svg": "/me-artcodezen-react/static/media/npm.87689eab730642c86d2b01f3ef4a19e3.svg",
     "static/media/windows.svg": "/me-artcodezen-react/static/media/windows.c6bdcf3339e2ba9c67ed5551a4f574d6.svg",
     "main.97688f7d.css.map": "/me-artcodezen-react/static/css/main.97688f7d.css.map",
-    "main.bd48ce80.js.map": "/me-artcodezen-react/static/js/main.bd48ce80.js.map",
+    "main.59792090.js.map": "/me-artcodezen-react/static/js/main.59792090.js.map",
     "787.28cb0dcd.chunk.js.map": "/me-artcodezen-react/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.97688f7d.css",
-    "static/js/main.bd48ce80.js"
+    "static/js/main.59792090.js"
   ]
 }
