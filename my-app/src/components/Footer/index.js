@@ -4,11 +4,12 @@ import imgGithub from "../../assets/footerImages/github.svg";
 import imgTikTok from "../../assets/footerImages/tiktok.svg";
 import imgYoutube from "../../assets/footerImages/youtube.svg";
 import imgDeviantArt from "../../assets/footerImages/deviantart.svg";
+import imgLinkedin from "../../assets/footerImages/linkedin.svg";
 function Footer() {
-    const arrayPathImg = [imgInstagram, imgGithub, imgTikTok, imgYoutube, imgDeviantArt];
+    const arrayPathImg = [imgInstagram, imgGithub, imgTikTok, imgYoutube, imgDeviantArt, imgLinkedin];
     const arrayUrl = ['https://www.instagram.com/artcodezen/', 'https://github.com/artcodezen',
                         'https://www.tiktok.com/@artcodezen', 'https://www.youtube.com/channel/UCi3xYozMiKuvpc-aTbAgA3Q',
-                    'https://www.deviantart.com/artcodezen'];
+                    'https://www.deviantart.com/artcodezen', 'https://www.linkedin.com/in/henrique-watanabe-b09b21243/'];
     let arrayItems = [];
     for(let i = 0; i < arrayPathImg.length; i++){
         let jsonitem = {};
