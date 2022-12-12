@@ -3,7 +3,7 @@
     border-color: white;
   }
   100% {
-    border-color: #a23b3b;
+    border-color: #838ABD;
   }
 }
 @keyframes colorAnimation {
@@ -11,7 +11,7 @@
     border-color: white;
   }
   100% {
-    border-color: #a23b3b;
+    border-color: #838ABD;
   }
 }
 @-webkit-keyframes slideInFromLeft {
@@ -86,7 +86,7 @@
 .cardImage {
   width: 50%;
   text-align: center;
-  background-color: #a23b3b;
+  background-color: #838ABD;
   color: white;
 }
 .cardImage h3 {
@@ -145,7 +145,7 @@
           animation-direction: alternate;
 }
 .selectCard .selectTitle button:hover {
-  background-color: #a23b3b;
+  background-color: #838ABD;
   border-radius: 10px;
   -webkit-animation-iteration-count: 0;
           animation-iteration-count: 0;

@@ -23,7 +23,7 @@
   justify-content: center;
   width: 100%;
   height: 60px;
-  background-color: rgb(162, 59, 59);
+  background-color: #838ABD;
   -webkit-animation: 2s ease-out 0s 1 slideInFromLeft;
           animation: 2s ease-out 0s 1 slideInFromLeft;
 }
